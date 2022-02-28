@@ -379,15 +379,7 @@ List all printer makers. Result set: maker.
 | 1     | 2001-04-27 00:00:00.000 | 3110.0000  | NULL       |
 | 1     | 2001-05-11 00:00:00.000 | 2530.0000  | 4500.0000  |
 | 2     | 2001-03-22 00:00:00.000 | 2880.0000  | 10000.0000 |
-| 2     | 2001-03-24 00:00:00.000 | NULL       | 3000.0000  |
-| 2     | 2001-03-29 00:00:00.000 | 7848.0000  | NULL       |
-| 2     | 2001-04-02 00:00:00.000 | 2040.0000  | NULL       |
-| 3     | 2001-09-13 00:00:00.000 | 2700.0000  | 3100.0000  |
-| 3     | 2001-09-14 00:00:00.000 | 1150.0000  | NULL       |
-
-
-## **Task 31**
-### Description
+| 2     | 2001-03-24 00:00:00https://www.youtube.com/watch?v=9qhU_gDMYh4&list=RDCMUCK5MedKoNJ5aRahfGOIGx6g&start_radio=1&rv=9qhU_gDMYh4&t=1
 *For ship classes with a gun caliber of 16 in. or more, display the class and the country.*
 
 ### Answer
@@ -412,17 +404,430 @@ List all printer makers. Result set: maker.
 | USA	     | 1897.78 |
 
 
-## **Task **
+## **Task 33**
+### Description
+*Get the ships sunk in the North Atlantic battle.*
+*Result set: ship.*
+
+### Answer
+| ship     |
+| -------- |
+| Bismarck |
+| Hood     |
+
+## **Task 34**
+### Description
+*In accordance with the Washington Naval Treaty concluded in the beginning of 1922, it was prohibited to build battle ships with a displacement of more than 35 thousand tons.*
+*Get the ships violating this treaty (only consider ships for which the year of launch is known).*
+*List the names of the ships.*
+
+### Answer
+| name           |
+| -------------- |
+| Iowa           |
+| Missouri       |
+| Musashi        |
+| New Jersey     |
+| North Carolina |
+| South Dakota   |
+| Washington     |
+| Wisconsin      |
+| Yamato         |
+
+
+## **Task 35**
+### Description
+*Find models in the Product table consisting either of digits only or Latin letters (A-Z, case insensitive) only.*
+*Result set: model, type.*
+
+### Answer
+| model | type    |
+| ----- | ------- |
+| 1121  | PC      |
+| 1232  | PC      |
+| 1233  | PC      |
+| 1260  | PC      |
+| 1276  | Printer |
+| 1288  | Printer |
+| 1298  | Laptop  |
+| 1321  | Laptop  |
+| 1401  | Printer |
+| 1408  | Printer |
+| 1433  | Printer |
+| 1434  | Printer |
+| 1750  | Laptop  |
+| 1752  | Laptop  |
+| 2112  | PC      |
+| 2113  | PC      |
+
+
+## **Task 36**
+### Description
+*List the names of lead ships in the database (including the Outcomes table).*
+
+### Answer
+| class          |
+| -------------- |
+| Bismarck       |
+| Iowa           |
+| Kongo          |
+| North Carolina |
+| Renown         |
+| Revenge        |
+| Tennessee      |
+| Yamato         |
+
+
+## **Task 37**
+### Description
+*Find classes for which only one ship exists in the database (including the Outcomes table).*
+
+### Answer
+|          |
+| -------- |
+| Bismarck |
+
+
+## **Task 38**
+### Description
+*Find countries that ever had classes of both battleships (‘bb’) and cruisers (‘bc’).*
+
+### Answer
+| country    |
+| ---------- |
+| Gt.Britain |
+| Japan      |
+
+
+## **Task 39**
+### Description
+*Find the ships that `survived for future battles`; that is, after being damaged in a battle, they participated in another one, which occurred later.*
+
+### Answer
+| ship       |
+| ---------- |
+| California |
+
+
+## **Task 40**
+### Description
+*Get the makers who produce only one product type and more than one model. Output: maker, type.*
+
+### Answer
+| maker | type    |
+| ----- | ------- |
+| D	    | Printer |
+
+
+## **Task 41**
+### Description
+*For each maker who has models at least in one of the tables PC, Laptop, or Printer, determine the maximum price for his products.*
+*Output: maker; if there are NULL values among the prices for the products of a given maker, display NULL for this maker, otherwise, the maximum price.*
+
+### Answer
+| maker |           |
+| ----- | --------- |
+| A	    | 1150.0000 |
+| B	    | 1200.0000 |
+| C	    | 970.0000  |
+| D	    | 400.0000  |
+| E	    | 350.0000  |
+
+
+## **Task 42**
+### Description
+*Find the names of ships sunk at battles, along with the names of the corresponding battles.*
+
+### Answer
+| ship	     | battle         |
+| ---------- | -------------- |
+| Bismarck   | North Atlantic |
+| Fuso	     | Surigao Strait |
+| Hood	     | North Atlantic |
+| Kirishima	 | Guadalcanal    |
+| Schamhorst | North Cape     |
+| Yamashiro  | Surigao Strait |
+
+
+## **Task 43**
+### Description
+*Get the battles that occurred in years when no ships were launched into water.*
+
+### Answer
+| name     |
+| -------- |
+| #Cuba62a |
+| #Cuba62b |
+
+
+## **Task 44**
+### Description
+*Find all ship names beginning with the letter R.*
+
+### Answer
+| name            |
+| --------------- |
+| Ramillies       |
+| Renown          |
+| Repulse         |
+| Resolution      |
+| Revenge         |
+| Rodney          |
+| Royal Oak       |
+| Royal Sovereign |
+
+
+## **Task 45**
+### Description
+*Find all ship names consisting of three or more words (e.g., King George V).*
+*Consider the words in ship names to be separated by single spaces, and the ship names to have no leading or trailing spaces.*
+
+### Answer
+| name            |
+| --------------- |
+| Duke of York    |
+| King George V   |
+| Prince of Wales |
+
+
+## **Task 46**
+### Description
+*For each ship that participated in the Battle of Guadalcanal, get its name, displacement, and the number of guns.*
+
+### Answer
+| Ship		   |       |    |
+| ------------ | ----- | -- |
+| California   | 32000 | 12 |
+| Kirishima	   | 32000 | 8  |
+| South Dakota | 37000 | 12 |
+| Washington   | 37000 | 12 |
+
+
+## **Task 47**
+### Description
+*Find the countries that have lost all their ships in battles.*
+
+### Answer
+| country |
+| ------- |
+| Germany |
+
+
+## **Task 48**
+### Description
+*Find the ship classes having at least one ship sunk in battles.*
+
+### Answer
+| class    |
+| -------- |
+| Bismarck |
+| Kongo    |
+
+
+## **Task 49**
+### Description
+*Find the names of the ships having a gun caliber of 16 inches (including ships in the Outcomes table).*
+
+### Answer
+| name           |
+| -------------- |
+| Iowa           |
+| Missouri       |
+| New Jersey     |
+| North Carolina |
+| South Dakota   |
+| Washington     |
+| Wisconsin      |
+
+
+## **Task 50**
+### Description
+*Find the battles in which Kongo-class ships from the Ships table were engaged.*
+
+### Answer
+| battle      |
+| ----------- |
+| Guadalcanal |
+
+
+## **Task 51**
 ### Description
 **
 
 ### Answer
+| class           |
+| --------------- |
+| Bismarck        |
+| California      |
+| Iowa            |
+| Missouri        |
+| Musashi         |
+| New Jersey      |
+| North Carolina  |
+| Ramillies       |
+| Revenge         |
+| Royal Oak       |
+| Royal Sovereign |
+| South Dakota    |
+| Tennessee       |
+| Washington      |
+| Wisconsin       |
+| Yamato          |
 
+
+## **Task 52**
+### Description
+*Determine the names of all ships in the Ships table that can be a Japanese battleship having at least nine main guns with a caliber of less than 19 inches and a displacement of not more than 65 000 tons.*
+
+### Answer
+| name    |
+| ------- |
+| Musashi |
+| Yamato  |
+
+
+## **Task 53**
+### Description
+*With a precision of two decimal places, determine the average number of guns for the battleship classes.*
+
+### Answer
+|      |
+| ---- |
+| 9.67 |
+
+
+## **Task 54**
+### Description
+*With a precision of two decimal places, determine the average number of guns for all battleships (including the ones in the Outcomes table).*
+
+### Answer
+|      |
+| ---- |
+| 9.63 |
+
+
+## **Task 55**
+### Description
+*For each class, determine the year the first ship of this class was launched.*
+*If the lead ship’s year of launch is not known, get the minimum year of launch for the ships of this class.*
+*Result set: class, year.*
+
+### Answer
+| class	         |      |
+| -------------- | ---- |
+| Bismarck       | NULL |
+| Iowa	         | 1943 |
+| Kongo	         | 1913 |
+| North Carolina | 1941 | 
+| Renown	     | 1916 |
+| Revenge	     | 1916 | 
+| Tennessee	     | 1920 |
+| Yamato	     | 1941 |
+
+
+## **Task 56**
+### Description
+*For each class, find out the number of ships of this class that were sunk in battles.*
+*Result set: class, number of ships sunk.*
+
+### Answer
+| class          | sunks |
+| -------------- | ----- |
+| Bismarck       | 1     |
+| Iowa           | 0     |
+| Kongo          | 1     |
+| North Carolina | 0     |
+| Renown	     | 0     |
+| Revenge	     | 0     |
+| Tennessee	     | 0     |
+| Yamato	     | 0     |
+
+
+## **Task 57**
+### Description
+*For classes having irreparable combat losses and at least three ships in the database, display the name of the class and the number of ships sunk.*
+
+### Answer
+| class	|   |
+| ----- | - |
+| Kongo | 1 |
+
+
+## **Task 58**
+### Description
+*For each product type and maker in the Product table, find out, with a precision of two decimal places, the percentage ratio of the number of models of the*
+*actual type produced by the actual maker to the total number of models by this maker.*
+*Result set: maker, product type, the percentage ratio mentioned above.*
+
+### Answer
+| maker | type	  |        |
+| ----- | ------- | ------ |
+| A	    | Laptop  |	28.57  |
+| A	    | PC	  | 28.57  |
+| A	    | Printer |	42.86  |
+| B	    | Laptop  |	50.00  |
+| B	    | PC	  | 50.00  |
+| B	    | Printer |	.00    |
+| C	    | Laptop  |	100.00 |
+| C	    | PC	  | .00    |
+| C	    | Printer |	.00    |
+| D	    | Laptop  |	.00    |
+| D	    | PC	  | .00    |
+| D	    | Printer |	100.00 |
+| E	    | Laptop  |	.00    |
+| E	    | PC	  | 75.00  |
+| E	    | Printer |	25.00  |
+
+
+## **Task 59**
+### Description
+*Calculate the cash balance of each buy-back center for the database with money transactions being recorded not more than once a day.*
+*Result set: point, balance.*
+
+### Answer
+| point |            |
+| ----- | ---------- |
+| 1	    | 5263.9600  |
+| 2	    | 172.0000   |
+| 3	    | 23550.0000 |
+
+
+## **Task 60**
+### Description
+*For the database with money transactions being recorded not more than once a day, calculate the cash balance of each buy-back center at the beginning of 4/15/2001.*
+*Note: exclude centers not having any records before the specified date.*
+*Result set: point, balance*
+
+### Answer
+| point |	        |
+| ----- | --------- |
+| 1	    | 6403.9600 | 
+| 2	    | 172.0000  |
+
+
+## **Task 61**
+### Description
+*For the database with money transactions being recorded not more than once a day, calculate the total cash balance of all buy-back centers.*
+
+### Answer
+|            |
+| ---------- |
+| 28985.9600 |
+
+
+## **Task 62**
+### Description
+*For the database with money transactions being recorded not more than once a day, calculate the total cash balance of all buy-back centers at the beginning of 04/15/2001.*
+
+### Answer
+|           |
+| --------- |
+| 6575.9600 |
 
 
 ## Task 63
 ### Description
-*Определить имена разных пассажиров, когда-либо летевших на одном и том же месте более одного раза.*
+*Find the names of different passengers that ever travelled more than once occupying seats with the same number.*
 
 ### Answer
 | name          |
@@ -431,10 +836,11 @@ List all printer makers. Result set: maker.
 | Mullah Omar   |      
 | Nikole Kidman |   
 
+
 ## Task 64
 ### Description
-*Используя таблицы Income и Outcome, для каждого пункта приема определить дни, когда был приход, но не было расхода и наоборот.*
-*Вывод: пункт, дата, тип операции (inc/out), денежная сумма за день.*
+*Using the Income and Outcome tables, determine for each buy-back center the days when it received funds but made no payments, and vice versa.*
+*Result set: point, date, type of operation (inc/out), sum of money per day.*
 
 ### Answer
 | point  |          date            | operation  |   money    |
@@ -451,6 +857,28 @@ List all printer makers. Result set: maker.
 |     2  | 2001-03-29 00:00:00.000  | out        |  7848.0000 |
 |     2  | 2001-04-02 00:00:00.000  | out        |  2040.0000 |
 |     3  | 2001-09-14 00:00:00.000  | out        |  1150.0000 |
+
+## **Task 65**
+### Description
+*Number the unique pairs {maker, type} in the Product table, ordering them as follows:*
+*- maker name in ascending order;*
+*- type of product (type) in the order PC, Laptop, Printer.*
+*If a manufacturer produces more than one type of product, its name should be displayed in the first row only;*
+*other rows for THIS manufacturer should contain an empty string (').*
+
+### Answer
+| num | maker | type    |
+| --- | ----- | ------- |
+| 1	  | A	  | PC      |
+| 2   |		  | Laptop  |
+| 3   |		  | Printer |
+| 4	  | B	  | PC      |
+| 5   |		  | Laptop  |
+| 6	  | C	  | Laptop  |
+| 7	  | D	  | Printer |
+| 8	  | E	  | PC      |
+| 9   |		  | Printer |
+
 
 ## Task 66
 ### Description
@@ -482,4 +910,32 @@ List all printer makers. Result set: maker.
 |-------------|
 |           4 |
 
-## Task 
+
+## **Task 68**
+### Description
+*Find out the number of routes with the greatest number of flights (trips).*
+*Notes.*
+*1) A - B and B - A are to be considered the SAME route.*
+*2) Use the Trip table only.*
+
+### Answer
+
+
+
+## **Task 69**
+### Description
+**
+
+### Answer
+
+## **Task 70**
+### Description
+**
+
+### Answer
+
+## **Task **
+### Description
+**
+
+### Answer
